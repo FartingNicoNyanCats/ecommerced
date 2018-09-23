@@ -1,0 +1,29 @@
+name: authd
+version: 0.1.0
+
+authors:
+  - Karchnu <karchnu@karchnu.fr>
+  - Luka Vandervelden <lukc@upyum.com>
+
+description: |
+    E-commerce daemon.
+
+targets:
+  ecommerced:
+    main: src/main.cr
+
+crystal: 0.26
+
+dependencies:
+    kemal:
+        github: kemalcr/kemal
+        branch: master
+    jwt:
+        github: crystal-community/jwt
+        branch: master
+    pg:
+        github: will/crystal-pg
+    crecto:
+        github: fridgerator/crecto
+
+license: EUPL
